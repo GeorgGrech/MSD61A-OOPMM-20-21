@@ -316,7 +316,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myCirclePrefab: {fileID: 9101978671332923051, guid: 6096f56921571ab4b9eee9347b14ca0b,
     type: 3}
-  padding: 0
+  padding: 0.5
 --- !u!4 &1562491710
 Transform:
   m_ObjectHideFlags: 0
@@ -360,9 +360,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7050e4843edd7db41841c3b4f94448d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myCirclePrefab: {fileID: 9101978671332923051, guid: 6096f56921571ab4b9eee9347b14ca0b,
-    type: 3}
-  padding: 0.5
 --- !u!4 &2127740494
 Transform:
   m_ObjectHideFlags: 0

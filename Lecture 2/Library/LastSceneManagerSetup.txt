@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Move_with_keys.unity
+- path: Assets/Scenes/Physics.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

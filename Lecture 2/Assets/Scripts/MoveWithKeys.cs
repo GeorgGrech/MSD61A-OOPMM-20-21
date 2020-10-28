@@ -21,7 +21,7 @@ public class MoveWithKeys : MonoBehaviour
         Debug.Log(YMax);
 
 
-        myPrefab = Resources.Load("Square") as GameObject;
+        myPrefab = Resources.Load("Prefabs/Square") as GameObject;
         myShape = Instantiate(myPrefab, new Vector3(0f, 0f, 0f), Quaternion.identity);
     }
 
