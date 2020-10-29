@@ -7,9 +7,9 @@ public class Triangle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Shape myshape = new Shape();
-        Rigidbody2D mysquare = this.gameObject.GetComponent<Rigidbody2D>();
-        myshape.MoveLeft(mysquare);
+        Shape mytriangle = new Shape(2f, 0f);
+        Rigidbody2D mytriangleBody = this.gameObject.GetComponent<Rigidbody2D>();
+        mytriangle.MoveLeft(mytriangleBody);
     }
 
     // Update is called once per frame
