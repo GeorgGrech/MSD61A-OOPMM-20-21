@@ -16,13 +16,14 @@ public class Shape
     public void MoveRight(Rigidbody2D myshape)
     {
         myshape.velocity = speed;
+      //  myshape.rotation = +45;
 
     }
 
     public void MoveLeft(Rigidbody2D myshape)
     {
         myshape.velocity = -speed;
-
+     //   myshape.rotation=+90;
     }
 
 
