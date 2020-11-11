@@ -1,0 +1,14 @@
+OOP Concepts short notes
+
+Encapsulation is an Object Oriented Programming concept that binds together 
+the data and functions (methods) that manipulate the data, and that keeps both 
+safe from outside interference and misuse. 
+Data encapsulation led to the important OOP concept of data hiding.
+
+Inheritance (OOP) is when an object or class is based on another object or class,
+
+Overloading occurs when two or more methods (or constructors) in one class have the same method name but different parameters.
+
+Overriding occurs when two methods have the same method name and parameters. One of the methods is in the parent class, 
+and the other is in the child class. 
+Overriding allows a child class to provide the specific implementation of a method that is already present in its parent class.​
