@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7082665888654670524}
   - component: {fileID: 763291401756669083}
   - component: {fileID: 7662217666096017907}
-  - component: {fileID: -2575099185058314254}
+  - component: {fileID: 1708468263004541250}
   m_Layer: 0
   m_Name: LargeBullet
   m_TagString: Untagged
@@ -121,7 +121,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &-2575099185058314254
+--- !u!114 &1708468263004541250
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,6 +130,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1537059829072399584}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ae10464a62fd8c41b38fefdeaa46cc2, type: 3}
+  m_Script: {fileID: 11500000, guid: d9ce1621f2c2c7b4ba23f0ababae0fad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

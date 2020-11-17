@@ -15,10 +15,11 @@ public class Cannon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mousePos = new Vector3(mousePos.x, mousePos.y, 0);
-        Debug.Log(mousePos);
-        Quaternion newrotation = Quaternion.LookRotation(transform.position - mousePos, new Vector3(0,0,1));
+       // mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+       // mousePos = new Vector3(mousePos.x, mousePos.y, 0);
+      //  Debug.Log(mousePos);
+        Quaternion newrotation = Quaternion.LookRotation(transform.position - GameData.MouseTarget, new Vector3(0,0,1));
+        Debug.Log(GameData.XMax);
         newrotation.x = 0f;
         newrotation.y = 0f;
         //transform.rotation = newrotation;

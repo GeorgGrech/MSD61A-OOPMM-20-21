@@ -14,7 +14,7 @@ public class Square : Shape
         
     }
 
-    protected override void MoveRight(Rigidbody2D myshape)
+    protected override void MoveRight(Rigidbody2D myshape)  //overriding and extending the functionality of the parent method
     {
         
         base.speed = new Vector2(2f, 0);
