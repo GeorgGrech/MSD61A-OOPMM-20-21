@@ -11,12 +11,29 @@ public class Bullet : MonoBehaviour
     protected virtual void Start()
     {
         //mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-       // mousePos = new Vector3(mousePos.x, mousePos.y, 0);
-       // Debug.Log(mousePos);
-        direction = GameData.MouseTarget - new Vector3(0f, -8f, 0f);
+        // mousePos = new Vector3(mousePos.x, mousePos.y, 0);
+        // Debug.Log(mousePos);
+        Debug.Log("YMin: " + GameData.YMin);
+        direction = GameData.MouseTarget - new Vector3(0f, GameData.YMin, 0f);
         direction.Normalize();
         GetComponent<Rigidbody2D>().velocity = direction * speed;
 
+    }
+
+    protected void OnTriggerEnter2D(Collider2D other)
+    {
+
+        if (other.gameObject.tag == "Boundary")
+        {
+            Debug.Log("Leaving screen");
+            Destroy(this.gameObject);
+        }
+
+        if (other.gameObject.tag == "Enemy")
+        {
+            GameData.Score++;            
+            Destroy(this.gameObject);
+        }
     }
 
 

@@ -4,6 +4,9 @@ using UnityEngine;
 
 public abstract class GameData : MonoBehaviour
 {
+
+    private static int _score = 0;
+
     //CREATE A GETTER
     public static Vector3 MouseTarget
     {
@@ -15,9 +18,17 @@ public abstract class GameData : MonoBehaviour
     {
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePos = new Vector3(mousePos.x, mousePos.y, 0);
-        Debug.Log(mousePos);
+      //  Debug.Log(mousePos);
         return mousePos;
     }
+
+    //CREATE GETTER AND SETTER FOR SCORE
+    public static int Score
+    {
+        get { return _score; }
+        set { _score = value; }
+    }
+
 
 
     public static float XMin

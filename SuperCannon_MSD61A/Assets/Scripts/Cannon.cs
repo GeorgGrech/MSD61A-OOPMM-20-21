@@ -19,7 +19,7 @@ public class Cannon : MonoBehaviour
        // mousePos = new Vector3(mousePos.x, mousePos.y, 0);
       //  Debug.Log(mousePos);
         Quaternion newrotation = Quaternion.LookRotation(transform.position - GameData.MouseTarget, new Vector3(0,0,1));
-        Debug.Log(GameData.XMax);
+      //  Debug.Log(GameData.XMax);
         newrotation.x = 0f;
         newrotation.y = 0f;
         //transform.rotation = newrotation;
