@@ -6,13 +6,14 @@ public class EnemySpawner : MonoBehaviour
 {
     private GameObject myenemyPrefab;
 
+    private int enemychoice;
     Coroutine myCoroutine;
+
+    [SerializeField] List<GameObject> enemiesList;
     // Start is called before the first frame update
     void Start()
     {
-        myenemyPrefab = Resources.Load("prefabs/Enemy") as GameObject;
         StartCoroutine(SpawnEnemies());
-
     }
 
     // Update is called once per frame
@@ -25,9 +26,9 @@ public class EnemySpawner : MonoBehaviour
     {
         while (true)
         {
-            
+            enemychoice = Random.Range(0, enemiesList.Count);
             Vector3 myenemyPos = new Vector3(Random.Range(GameData.XMin, GameData.XMax), GameData.YMax, 0f);
-            Instantiate(myenemyPrefab, myenemyPos, Quaternion.identity);
+            Instantiate(enemiesList[enemychoice], myenemyPos, Quaternion.identity);
             yield return new WaitForSeconds(1f);
         }
     }

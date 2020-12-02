@@ -8,7 +8,8 @@ public class LargeBullet : Bullet
     protected override void Start()
     {
         base.speed = 5;
-        base.Start();
+        direction = new Vector2(GameData.XMax, GameData.YMax);
+        ApplyBulletVelocity();
 
     }
 

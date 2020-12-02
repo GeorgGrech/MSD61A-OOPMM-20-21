@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    protected float speed = 8;
+    protected float speed = 5;
     private Vector3 mousePos;
-    private Vector2 direction;
+    protected Vector2 direction;
     // Start is called before the first frame update
     protected virtual void Start()
     {
@@ -15,10 +15,16 @@ public class Bullet : MonoBehaviour
         // Debug.Log(mousePos);
         Debug.Log("YMin: " + GameData.YMin);
         direction = GameData.MouseTarget - new Vector3(0f, GameData.YMin, 0f);
+        ApplyBulletVelocity();
+    }
+
+    protected virtual void ApplyBulletVelocity()
+    {
         direction.Normalize();
         GetComponent<Rigidbody2D>().velocity = direction * speed;
 
     }
+
 
     protected void OnTriggerEnter2D(Collider2D other)
     {
@@ -29,10 +35,11 @@ public class Bullet : MonoBehaviour
             Destroy(this.gameObject);
         }
 
-        if (other.gameObject.tag == "Enemy")
+        if (other.gameObject.name.Contains("Enemy"))
         {
-            GameData.Score++;            
-            Destroy(this.gameObject);
+            GameData.Score++;
+          //  Destroy(other.gameObject);
+          //  Destroy(this.gameObject);
         }
     }
 

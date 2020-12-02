@@ -462,6 +462,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a25750882533614e8bd8f8cad6794ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemiesList:
+  - {fileID: 8770631269033742134, guid: b5f8c89e582b2ed44a1c732055a5fe7f, type: 3}
+  - {fileID: 7132617927714371500, guid: c0ff9bf690ee9ba42bca3f68ab3d1f5e, type: 3}
 --- !u!4 &648195717
 Transform:
   m_ObjectHideFlags: 0
@@ -659,7 +662,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &786568188
 MonoBehaviour:
   m_ObjectHideFlags: 0

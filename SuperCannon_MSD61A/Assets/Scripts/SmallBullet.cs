@@ -7,7 +7,7 @@ public class SmallBullet : Bullet
     // Start is called before the first frame update
     protected override void Start()
     {
-        base.speed = 10;
+        base.speed = 30;
         base.Start();
     }
 

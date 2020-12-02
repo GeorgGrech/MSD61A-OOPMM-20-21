@@ -2,6 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+public interface ITakeDamage
+
+{
+
+    int health { get; set; }
+    void TakeDamage(int damage);
+}
+
+
 public class GameManager : MonoBehaviour
 {
     // Start is called before the first frame update
